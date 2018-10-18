@@ -47,27 +47,30 @@ function Bubble(tempPx,tempPy,tempR,tempSpeed){
   
   
   
-  /*
+ 
   //control the distance between bubbles
   //avoid overlapping
-  
+  /*
   var r1;
   var r2;
   var px1;
+  var py1;
   var px2;
+  var py2;
+  */
   
-  var pointDist=dist(
   
-  boolean overlapping=false;
+  //boolean overlapping=false;
   var d=dist(this.px1,this.py1,this.px2,this.py2);
   
   
 
-  if (d<this.r1+this.r2){
-    overlapping=true;
-  }
+  if (d>this.r1+this.r2){
+  d=this.r1+this.r2;
   
-  */
+    //overlapping=true;
+  }
+
   
   
   //draw the bubble
