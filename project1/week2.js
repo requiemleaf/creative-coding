@@ -1,16 +1,21 @@
-//My project1 is a game ma chine.
+//My project1 is a drawing game machine.
 //The machine could create bubbles.
-//If you click the bubble, the bubble will disappear. And you will get some scores.
-//The size and color of the bubble will change with time
+//If you click the bubble, the bubble will disappear. 
+//The size and color of the bubble will change with time.
 
-//??? making some noises
+
+//??? trying to make some sounds when the bubble collide with each other
 //??? change the bubble size according to the location of the mouse
-//??? making “Devourer of Souls”. (swallowing small circles)
- // ??? try to let bubbles do not overlap at the beginning
+//??? trying to make “Devourer of Souls”. (swallowing small circles)
+//??? trying to portray the movement track
+//??? trying to let bubbles do not overlap at the beginning
+//trying to use vector this week
+//trying to use force this week
+
 
 
  let bubble=[];
- var num=20;
+ var num=30;
 
  function setup() {
  	createCanvas(windowWidth, windowHeight);
@@ -27,8 +32,8 @@
 	for(var i=0;i<num; i++){
 		var x= random(r,width-r);
 		var y= random(r,height-r);
-		var r= random(40,50);
-		var vel=3;
+		var r= random(10,30);
+		var vel=5;
 		bubble[i]=new Bubble(x,y,r,vel);
 	}
 }
