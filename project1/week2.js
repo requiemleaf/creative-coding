@@ -9,13 +9,11 @@
  // ??? try to let bubbles do not overlap at the beginning
 
 
-let bubble=[];
-var num=20;
+ let bubble=[];
+ var num=20;
 
-
-
-function setup() {
-	createCanvas(windowWidth, windowHeight);
+ function setup() {
+ 	createCanvas(windowWidth, windowHeight);
 	//frameRate(30);
 	//while(bubble.length<num){
 	// 	let bubble={
@@ -126,8 +124,8 @@ class Bubble{
 			return true;
 		// }else{
 		// 	return false;
-		}
 	}
+}
 
 	//judging overlapping
 	overlap(other){
