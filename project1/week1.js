@@ -12,6 +12,7 @@
 var points=[];
 var num=500;
 
+
 function setup(){
   createCanvas(1200,800);
   frameRate(40);
@@ -34,9 +35,8 @@ function draw(){
     //points[i].grow();   //bubbles grow
     
   }
+
 }
-
-
 
 
 function Bubble(tempPx,tempPy,tempR,tempSpeed){
