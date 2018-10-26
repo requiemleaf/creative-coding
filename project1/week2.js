@@ -4,6 +4,8 @@
 //The size and color of the bubble will change with time.
 
 
+
+/// I'm confused about why there is always a bubble at (0,0) and why there are some bubbles still overlapping。
 //??? trying to make some sounds when the bubble collide with each other
 //??? change the bubble size according to the location of the mouse
 //??? trying to make “Devourer of Souls”. (swallowing small circles)
@@ -20,15 +22,6 @@
  function setup() {
  	createCanvas(windowWidth, windowHeight);
 	//frameRate(30);
-	//while(bubble.length<num){
-	// 	let bubble={
-	// 		x:random(r,widht-r);
-	// 		y:random(r,height-r);
-	// 		r:random(40,50);
-	// 		vel:3;
-	// 	}
-	// }
-
 	for(var i=0;i<num; i++){
 		var x= random(r,width-r);
 		var y= random(r,height-r);
@@ -66,9 +59,10 @@ function draw() {
 			}
 			if(overlapping){
 				a.bounce();
-			}else{
-				a.show();
 			}
+			// else{
+			// 	a.show();
+			// }
 		}
 		a.move();
 		a.show();
@@ -127,8 +121,8 @@ class Bubble{
 		let d= dist(mx,my,this.x,this.y);
 		if (d<this.r){
 			return true;
-		// }else{
-		// 	return false;
+		}else{
+			return false;
 	}
 }
 
