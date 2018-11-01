@@ -34,7 +34,7 @@ function setup() {
 		}
 	}
 
-	cueBubble=new CueBubble(mouseX,mouseY);
+	cueBubble=new windTunnel(mouseX,mouseY);
 }
 
 //the bubble will disapper if click it
@@ -179,8 +179,8 @@ function draw() {
 	}
 }
 
-
-class CueBubble{
+//create the wind tunnel
+class windTunnel{
 	constructor(tempX,tempY){
 		this.x=tempX;
 		this.y=tempY;
